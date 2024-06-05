@@ -27,7 +27,7 @@ app.use('/api/v1/post',require('./routes/postRoutes.js'));
 app.get("/", (req,res) => {
     res.status(200).send({
         "success":true,
-        "msg":"Servidor node ejecutandose"
+        "msg":"Servidor node ejecutandose correctamente"
     })
 });
 
