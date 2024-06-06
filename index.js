@@ -20,8 +20,8 @@ app.use(express.json())
 app.use(morgan('dev'))
 
 // ROUTES
-app.use('/api/v1/auth',require('./routes/userRoutes.js'));
-app.use('/api/v1/post',require('./routes/postRoutes.js'));
+app.use('/api/v1/auth',require('./routes/userRoutes'));
+app.use('/api/v1/post',require('./routes/postRoutes'));
 
 // INICIO
 app.get("/", (req,res) => {
