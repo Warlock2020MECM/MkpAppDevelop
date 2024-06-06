@@ -92,7 +92,7 @@ const loginController = async (req, res) => {
       });
     }
     //Token JWT
-    const token = await JWT.sign({ _id: user._id }, process.env.JWT_secret, {
+    const token = await JWT.sign({ _id: user._id }, process.env.JWT_SECRET, {
       expiresIn: "7d",
     });
     //Contraseña indefinida
